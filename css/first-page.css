@@ -1,0 +1,110 @@
+.first-page {
+  width: 90%;
+  height: 100vh;
+  margin-left: 5%;
+  float: left;
+}
+
+.left-div {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  top: 0;
+}
+
+.right-div {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  margin-top: 50px;
+  background-image: url(../img/finalbk.svg);
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  top: 50%;
+  left: 50%;
+}
+
+.content-div {
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  left: 50%;
+  top: 40%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.content-div h2 {
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+  color: #09070e;
+  width: auto;
+}
+
+.content-div p {
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  color: #09070e;
+  letter-spacing: 1px;
+}
+
+.section-titles {
+  font-size: 2rem;
+  color: black;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+@media screen and (min-width: 2000px) {
+  .content-div {
+    margin-top: 65px;
+  }
+
+  .content-div p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .content-div {
+    margin-top: 75px;
+  }
+  .content-div p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .left-div {
+    width: 50%;
+    height: 460px;
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .content-div p {
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-div h2 {
+    font-size: 35px;
+  }
+  .right-div {
+    height: 460px;
+    margin-top: 65px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .right-div {
+    width: 90%;
+    margin-left: 5%;
+    height: 100vh;
+  }
+  .left-div {
+    display: none;
+  }
+}

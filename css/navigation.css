@@ -1,0 +1,77 @@
+h1 {
+  font-size: 35px;
+  padding: 0;
+  color: #09070e;
+  font-family: "Sacramento", cursive;
+}
+header {
+  width: 90%;
+  height: 60px;
+  margin-left: 5%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-weight: 400;
+  color: #09070e;
+  cursor: pointer;
+}
+.nav-ul li a:hover {
+  color: #f2b969;
+}
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    margin-bottom: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-ul {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    margin-left: 22px;
+    font-size: 25px;
+  }
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-ul.show {
+    display: flex;
+    background-color: #09070e;
+  }
+  .nav-ul li a {
+    color: #fafafa;
+  }
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+  }
+}

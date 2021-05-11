@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 16px;
+  color: #09070e;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus {
+  box-shadow: unset;
+  outline: none;
+  resize: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.section-titles {
+  padding: 0 0 10px 0;
+}
+.responsive-img {
+  max-width:100%;
+  display:block;
+  height:auto;
+}
